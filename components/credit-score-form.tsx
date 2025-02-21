@@ -12,6 +12,7 @@ import { ArrowRight, CreditCard, Lock, Moon, Sun, Wallet } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 import { useTheme } from "next-themes"
+import { UserAvatar } from "@/components/user-avatar"
 
 const MotionCard = motion(Card)
 
@@ -98,8 +99,9 @@ export default function CreditScoreForm() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="relative z-10 flex justify-end mb-4"
+          className="relative z-10 flex justify-end mb-4 gap-2"
         >
+          <UserAvatar />
           <Button
             variant="ghost"
             size="icon"
