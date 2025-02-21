@@ -58,7 +58,6 @@ debug*.log
 .tailwindcss
 
 # Optional - Ignore local config files
-tsconfig.json
 jsconfig.json
 
 # Add these lines to ignore SWC binaries
