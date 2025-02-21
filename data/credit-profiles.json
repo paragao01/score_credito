@@ -1,0 +1,207 @@
+{
+  "profiles": [
+    {
+      "scoreRange": {
+        "min": 0,
+        "max": 850,
+        "average": 650
+      },
+      "profile": {
+        "score": 780,
+        "status": "EXCELLENT",
+        "summary": "Seu score está entre os melhores do mercado! Você demonstra excelente gestão financeira.",
+        "analysis": {
+          "factors": {
+            "positive": [
+              {
+                "factor": "Pagamentos em Dia",
+                "impact": "ALTO",
+                "description": "Histórico consistente de pagamentos pontuais nos últimos 24 meses"
+              },
+              {
+                "factor": "Utilização de Crédito",
+                "impact": "ALTO",
+                "description": "Você utiliza menos de 30% do seu limite disponível"
+              },
+              {
+                "factor": "Tempo de Crédito",
+                "impact": "MÉDIO",
+                "description": "Histórico de crédito estabelecido há mais de 5 anos"
+              }
+            ],
+            "negative": []
+          }
+        },
+        "history": {
+          "months": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun"],
+          "scores": [750, 755, 765, 770, 775, 780]
+        },
+        "creditProfile": {
+          "totalAccounts": 4,
+          "openAccounts": 2,
+          "totalDebt": 12000,
+          "creditUsage": 25,
+          "paymentHistory": {
+            "onTime": 98,
+            "delayed": 2
+          }
+        },
+        "recommendations": [
+          {
+            "title": "Manter Excelência",
+            "description": "Continue com seus ótimos hábitos financeiros",
+            "priority": "BAIXA"
+          },
+          {
+            "title": "Diversificação",
+            "description": "Considere diversificar seu perfil de crédito de forma consciente",
+            "priority": "BAIXA"
+          },
+          {
+            "title": "Monitoramento",
+            "description": "Mantenha o monitoramento regular do seu score",
+            "priority": "MÉDIA"
+          }
+        ]
+      }
+    },
+    {
+      "scoreRange": {
+        "min": 0,
+        "max": 850,
+        "average": 650
+      },
+      "profile": {
+        "score": 650,
+        "status": "GOOD",
+        "summary": "Seu score está acima da média! Existem algumas oportunidades de melhoria.",
+        "analysis": {
+          "factors": {
+            "positive": [
+              {
+                "factor": "Tempo de Crédito",
+                "impact": "MÉDIO",
+                "description": "Histórico de crédito estabelecido há 3 anos"
+              },
+              {
+                "factor": "Mix de Crédito",
+                "impact": "MÉDIO",
+                "description": "Boa variedade de tipos de crédito"
+              }
+            ],
+            "negative": [
+              {
+                "factor": "Utilização de Crédito",
+                "impact": "ALTO",
+                "description": "Você está usando mais de 60% do seu limite disponível"
+              }
+            ]
+          }
+        },
+        "history": {
+          "months": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun"],
+          "scores": [630, 635, 640, 645, 648, 650]
+        },
+        "creditProfile": {
+          "totalAccounts": 3,
+          "openAccounts": 2,
+          "totalDebt": 25000,
+          "creditUsage": 65,
+          "paymentHistory": {
+            "onTime": 85,
+            "delayed": 15
+          }
+        },
+        "recommendations": [
+          {
+            "title": "Redução de Utilização",
+            "description": "Procure reduzir a utilização do seu limite de crédito para menos de 30%",
+            "priority": "ALTA"
+          },
+          {
+            "title": "Pagamentos em Dia",
+            "description": "Mantenha seus pagamentos em dia para melhorar seu histórico",
+            "priority": "ALTA"
+          },
+          {
+            "title": "Novas Consultas",
+            "description": "Evite solicitar novos créditos no momento",
+            "priority": "MÉDIA"
+          }
+        ]
+      }
+    },
+    {
+      "scoreRange": {
+        "min": 0,
+        "max": 850,
+        "average": 650
+      },
+      "profile": {
+        "score": 520,
+        "status": "NEEDS_ATTENTION",
+        "summary": "Identificamos pontos importantes que precisam de atenção para melhorar seu score.",
+        "analysis": {
+          "factors": {
+            "positive": [
+              {
+                "factor": "Contas Ativas",
+                "impact": "BAIXO",
+                "description": "Você mantém algumas contas ativas e gerenciáveis"
+              }
+            ],
+            "negative": [
+              {
+                "factor": "Pagamentos Atrasados",
+                "impact": "ALTO",
+                "description": "Histórico recente de atrasos em pagamentos"
+              },
+              {
+                "factor": "Utilização de Crédito",
+                "impact": "ALTO",
+                "description": "Alta utilização dos limites de crédito disponíveis"
+              },
+              {
+                "factor": "Consultas Recentes",
+                "impact": "MÉDIO",
+                "description": "Várias consultas ao seu CPF nos últimos meses"
+              }
+            ]
+          }
+        },
+        "history": {
+          "months": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun"],
+          "scores": [540, 535, 530, 525, 522, 520]
+        },
+        "creditProfile": {
+          "totalAccounts": 5,
+          "openAccounts": 3,
+          "totalDebt": 45000,
+          "creditUsage": 90,
+          "paymentHistory": {
+            "onTime": 65,
+            "delayed": 35
+          }
+        },
+        "recommendations": [
+          {
+            "title": "Regularização",
+            "description": "Priorize a regularização de pagamentos atrasados",
+            "priority": "ALTA"
+          },
+          {
+            "title": "Redução de Dívidas",
+            "description": "Crie um plano para redução do endividamento atual",
+            "priority": "ALTA"
+          },
+          {
+            "title": "Limite de Crédito",
+            "description": "Evite utilizar mais crédito até regularizar sua situação",
+            "priority": "ALTA"
+          }
+        ]
+      }
+    }
+  ]
+}
+
