@@ -77,6 +77,8 @@ export default function CreditScoreReport() {
             <ArrowLeft className="w-4 h-4" />
             Voltar para o início
           </Button>
+        </div>
+        <div className="flex justify-center">
           <h1 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 dark:from-white dark:via-gray-200 dark:to-white bg-clip-text text-transparent">
             Relatório de Crédito
           </h1>
