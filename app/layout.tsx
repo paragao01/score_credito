@@ -3,6 +3,7 @@ import "@/app/globals.css"
 import { ThemeProvider } from "@/providers/theme-provider"
 import { MockAuthProvider } from "@/providers/mock-auth-provider"
 import { UserAvatar } from "@/components/user-avatar"
+import { Header } from "@/components/header"
 
 export default function RootLayout({
   children,
@@ -17,9 +18,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <MockAuthProvider>
-            <header className="absolute top-0 right-0 p-4">
-              <UserAvatar />
-            </header>
+            <Header />
             {children}
           </MockAuthProvider>
         </ThemeProvider>

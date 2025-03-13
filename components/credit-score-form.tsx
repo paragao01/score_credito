@@ -8,11 +8,10 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { ArrowRight, CreditCard, Lock, Moon, Sun, Wallet } from "lucide-react"
+import { ArrowRight, CreditCard, Lock, Wallet } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 import { useTheme } from "next-themes"
-import { UserAvatar } from "@/components/user-avatar"
 
 const MotionCard = motion(Card)
 
@@ -20,7 +19,7 @@ export default function CreditScoreForm() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string>("")
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { theme } = useTheme()
   const router = useRouter()
 
   useEffect(() => {
@@ -93,27 +92,6 @@ export default function CreditScoreForm() {
           )}
         />
       </div>
-
-      {/* Theme Toggle */}
-      {mounted && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="relative z-10 flex justify-end mb-4 gap-2"
-        >
-          <UserAvatar />
-          <Button
-            variant="ghost"
-            size="icon"
-            className="rounded-full w-10 h-10 bg-white/10 backdrop-blur-xl border border-white/20 hover:bg-white/20"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          >
-            <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            <span className="sr-only">Toggle theme</span>
-          </Button>
-        </motion.div>
-      )}
 
       <div className="max-w-7xl mx-auto relative">
         {/* Header */}
